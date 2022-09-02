@@ -8,7 +8,7 @@ window.addEventListener('pageshow', function () {
     // declaring variables and targeting elements
     const now = new Date();
     const hrValidate = now.getHours() % 12 || 12;
-    const hr = hrValidate > 9 ? hrValidate : '0' + parseInt(hrValidate + 2);
+    const hr = hrValidate > 9 ? hrValidate : '0' + hrValidate;
     const min =
       now.getMinutes() > 9 ? now.getMinutes() : '0' + now.getMinutes();
     const sec =
