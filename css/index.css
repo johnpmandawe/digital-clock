@@ -1,0 +1,96 @@
+@import url('https://fonts.cdnfonts.com/css/seven-segment');
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Seven Segment', sans-serif, 'FontAwesome';
+}
+
+:root {
+  --ff-clr: rgb(255, 0, 0);
+  --bg-clr-primary: rgb(34, 33, 33);
+  --bg-clr-secondary: rgb(66, 66, 66);
+}
+
+body {
+  position: relative;
+  padding: 0rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    var(--bg-clr-primary),
+    var(--bg-clr-secondary)
+  );
+}
+
+h1 {
+  padding-bottom: 7rem;
+  color: rgb(0, 255, 255);
+  text-align: center;
+}
+
+.clock {
+  position: relative;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  background-color: rgb(0, 255, 255);
+  border-radius: 1rem;
+  border: 10px solid var(--bg-clr-secondary);
+  box-shadow: inset 1px 1px 5px var(--bg-clr-primary),
+    inset -1px -1px 5px var(--bg-clr-primary), 1px 1px 5px var(--bg-clr-primary);
+}
+
+#ampm {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  height: 70px;
+  padding: 0.5rem;
+  align-items: center;
+  width: 50%;
+  top: -80px;
+  border-radius: 1rem 1rem 0rem 0rem;
+  border: 10px solid var(--bg-clr-secondary);
+  box-shadow: inset 1px 1px 3px var(--bg-clr-primary),
+    inset -1px -1px 3px var(--bg-clr-primary);
+  background-color: rgb(0, 255, 255);
+}
+
+.ampm,
+.fa {
+  font-size: 2rem;
+  color: var(--bg-clr-secondary);
+  font-weight: 700;
+}
+
+span {
+  font-size: 7rem;
+  color: var(--ff-clr);
+}
+
+.colon {
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 480px) {
+  .clock {
+    width: 100%;
+  }
+  span {
+    font-size: 25vw;
+  }
+  .colon {
+    padding-bottom: 10vw;
+  }
+}
