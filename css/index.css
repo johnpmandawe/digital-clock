@@ -44,9 +44,9 @@ h1 {
   justify-content: center;
   padding: 1rem 0.5rem;
   text-align: center;
-  background-color: rgb(0, 255, 255);
-  border-radius: 1rem;
-  border: 10px solid var(--bg-clr-secondary);
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  border: 10px solid rgb(0, 255, 255);
   box-shadow: inset 1px 1px 5px var(--bg-clr-primary),
     inset -1px -1px 5px var(--bg-clr-primary), 1px 1px 5px var(--bg-clr-primary);
 }
@@ -58,20 +58,20 @@ h1 {
   height: 70px;
   padding: 0.5rem;
   align-items: center;
-  width: 50%;
+  width: 35%;
   top: -80px;
-  border-radius: 1rem 1rem 0rem 0rem;
-  border: 10px solid var(--bg-clr-secondary);
+  border-radius: 2rem 2rem 0rem 0rem;
+  border: 10px solid rgb(0, 255, 255);
   box-shadow: inset 1px 1px 3px var(--bg-clr-primary),
     inset -1px -1px 3px var(--bg-clr-primary);
-  background-color: rgb(0, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
-.ampm,
-.fa {
-  font-size: 2rem;
-  color: var(--bg-clr-secondary);
+.ampm {
+  font-size: 3rem;
+  color: rgb(255, 0, 0);
   font-weight: 700;
+  letter-spacing: 0.3rem;
 }
 
 span {
